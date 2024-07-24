@@ -3,6 +3,7 @@ package cl.praxis.proyectohospitalpost.service.Impl;
 import cl.praxis.proyectohospitalpost.entity.Patient;
 import cl.praxis.proyectohospitalpost.repository.IPatientRepository;
 import cl.praxis.proyectohospitalpost.service.IPatientService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class PatientServiceImpl implements IPatientService {
 
     IPatientRepository patientRepository;
 
+    @Autowired
     public PatientServiceImpl(IPatientRepository patientRepository) {
         this.patientRepository = patientRepository;
     }

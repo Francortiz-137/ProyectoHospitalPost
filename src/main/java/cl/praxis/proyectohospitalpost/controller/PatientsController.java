@@ -3,6 +3,7 @@ package cl.praxis.proyectohospitalpost.controller;
 import cl.praxis.proyectohospitalpost.service.IPatientService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,7 @@ public class PatientsController implements CommandLineRunner {
     IPatientService patientService;
     private final static Logger LOG = LoggerFactory.getLogger(PatientsController.class);
 
+    @Autowired
     public PatientsController(IPatientService patientService) {
         this.patientService = patientService;
     }
