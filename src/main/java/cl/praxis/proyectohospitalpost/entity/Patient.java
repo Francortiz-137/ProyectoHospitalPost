@@ -20,7 +20,7 @@ public class Patient {
     private String lastName;
     @Column(unique = true, nullable = false)
     private String email;
-    @Column(unique = true, nullable = false)
+    @Column(name = "telefono", unique = true, nullable = false)
     private String phone;
 
 }
