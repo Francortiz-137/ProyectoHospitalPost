@@ -34,6 +34,11 @@ public class PatientServiceImpl implements IPatientService {
     }
 
     @Override
+    public void deletePatientById(Long id) {
+        patientRepository.deleteById(id);
+    }
+
+    @Override
     public List<Patient> getAllPatients() {
         return patientRepository.findAll();
     }

@@ -8,6 +8,7 @@ public interface IPatientService {
     Patient addPatient(Patient patient);
     Patient updatePatient(Patient patient);
     void deletePatient(Patient patient);
+    void deletePatientById(Long id);
     List<Patient> getAllPatients();
     Patient getPatientById(Long id);
 }
